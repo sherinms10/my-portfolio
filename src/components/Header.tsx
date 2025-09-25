@@ -12,7 +12,7 @@ const Header = () => {
     { href: '#experience', label: 'Experience' },
     { href: '#contact', label: 'Contact' },
   ];
-
+ 
   return (
     <header className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <nav className="container mx-auto px-6 py-4">
