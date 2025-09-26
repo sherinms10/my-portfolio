@@ -9,7 +9,7 @@ const Header = () => {
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
-    { href: '#experience', label: 'Experience' },
+    // { href: '#experience', label: 'Experience' },
     { href: '#contact', label: 'Contact' },
   ];
  
@@ -25,24 +25,42 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-dark hover:text-primary transition-colors font-medium"
+                className="text-dark hover:text-teal-600 transition-colors font-medium"
               >
                 {item.label}
               </a>
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
+  className="hidden md:flex text-dark hover:text-teal-600 transition-colors font-medium cursor-pointer"
+  onClick={() => window.open('/SHERIN_M.pdf', '_blank')} 
+>
+  View CV
+</button>
+
+          {/* Mobile Menu Button */}
+          <div className=' flex gap-5 md:hidden'>
+                    <button
+  className="md:hidden text-dark hover:text-teal-600 transition-colors font-medium cursor-pointer"
+  onClick={() => window.open('/SHERIN_M.pdf', '_blank')} 
+>
+  View CV
+</button>
+                    <button
             className="md:hidden text-dark"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+
+          </div>
+          
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
+          
           <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg py-4">
             {navItems.map((item) => (
               <a

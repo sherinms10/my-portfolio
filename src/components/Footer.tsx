@@ -14,13 +14,13 @@ const Footer = () => {
           </div>
           
           <div className="flex gap-6 mb-6 md:mb-0">
-            <a href="https://github.com/yourusername" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://github.com/sherinms10" className="text-gray-400 hover:text-white transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com/in/yourprofile" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/sherinm14/" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:msherin1ll0@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+            <a href="mailto:msherin1110@gmail.com" className="text-gray-400 hover:text-white transition-colors">
               <Mail size={24} />
             </a>
           </div>

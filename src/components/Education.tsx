@@ -17,13 +17,13 @@ const education: Education[] = [
     {
       degree: "HSC in Computer Science",
       institution: "Pius Xi Higher Secondary School, Thoothoor",
-      period: "2018",
+      period: "2018 - 2019",
       score: "66.3%"
     },
     {
       degree: "SSLC",
       institution: "Pius Xi Higher Secondary School, Thoothoor",
-      period: "2016",
+      period: "2016 - 2017",
       score: "80.6%"
     }
   ]

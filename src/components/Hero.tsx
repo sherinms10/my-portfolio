@@ -1,11 +1,17 @@
 import { Download, Github, Linkedin, Mail } from "lucide-react";
 
-
 const Hero = () => {
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/SHERIN_M.pdf';
+    link.download = 'SHERIN_M_Resume.pdf';
+    link.click();
+  };
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="md:grid md:grid-cols-2 gap-12 items-center flex flex-col-reverse ">
           <div>
             <h1 className="text-5xl md:text-7xl font-bold text-dark mb-4">
               Hi, I'm <span className="text-primary">Sherin</span>
@@ -17,13 +23,13 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <a
-                href="/resume.pdf"
-                download
-                className="bg-primary text-black px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors flex items-center gap-2"
-              >
-                <Download /> Download Resume
-              </a>
+              <button 
+            onClick={handleDownloadCV}
+           className="bg-primary cursor-pointer text-black px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors flex items-center gap-2"
+          >
+            <Download className="w-4 h-4 mr-2" />
+            Download CV
+          </button>
               
               <div className="flex gap-4">
                 <a href="https://www.linkedin.com/in/sherinm14/" className="p-3 bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors">

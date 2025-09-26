@@ -45,13 +45,13 @@ const Experiences = () => {
     {
       role: "Frontend Developer",
       company: "Numota Technology, Kanyakumari",
-      period: "Dec 2024 to Present",
+      period: "Sept 2023 to Present",
       isCurrent: true
     },
   ]
 
   return (
-    <section id="experience" className=" bg-background p-5">
+    <section  className=" bg-background p-5">
     
         <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-8 flex items-center justify-center md:justify-start">
           <Briefcase className="w-8 h-8 mr-3 text-primary" />
@@ -69,7 +69,7 @@ const Experiences = () => {
                 <p className="text-muted-foreground mb-2 font-medium">{exp.company}</p>
                 <p className="text-sm text-muted-foreground mb-4">{exp.period}</p>
                 {exp.isCurrent && (
-                  <span className="inline-block px-3 py-1 text-xs bg-primary text-primary-foreground rounded-full">
+                  <span className="  px-3 py-1 bg-teal-600 text-white rounded-full text-sm">
                     Current
                   </span>
                 )}

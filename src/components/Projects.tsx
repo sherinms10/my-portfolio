@@ -4,30 +4,41 @@ import type { Project } from "../types";
 
 const Projects = () => {
   const projects: Project[] = [
+
     {
       id: 1,
-      title: 'NuCamp - Camp Management Portal',
-      description: 'Comprehensive camp management portal handling medical, food, accommodation, and transport services for employees with secure data management.',
-      technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'React Router'],
-      githubUrl: '#',
-      liveUrl: '#'
+      title: 'E-Cartify',
+      description: '• Built a modern e-commerce SPA featuring dynamic product catalogs, cart management, and a seamless checkout flow. • Eliminated data loss on browser refresh by implementing localStorage for persistent cart data. ',
+      technologies: ['React.js', 'Tailwind CSS', 'React Router', 'Local Storage'],
+      githubUrl: 'https://github.com/sherinms10/e-cartify',
+      liveUrl: 'https://e-cartify.vercel.app/'
     },
-    {
+
+     {
       id: 2,
-      title: 'NuService - Fire Safety System',
-      description: 'Fire safety inspection and maintenance system for tracking extinguisher status and client compliance reports, reducing manual tracking time by 50%.',
-      technologies: ['React.js', 'Tailwind CSS', 'React Router'],
-      githubUrl: '#',
-      liveUrl: '#'
+      title: 'SkyCast',
+      description: '• Created a fully responsive weather application with city search, GPS detection, and display of realtime weather metrics. • Implemented local timezone detection to show accurate local time and date for any searched location',
+      technologies: ['React.js', 'Tailwind CSS', 'OpenWeatherMap API '],
+      githubUrl: 'https://github.com/sherinms10/SkyCast',
+      liveUrl: 'https://skycast-mu.vercel.app/'
     },
-    {
-      id: 3,
-      title: 'E-Cartify - E-commerce SPA',
-      description: 'Modern e-commerce single-page application with dynamic product catalogs, cart management, and seamless checkout flow.',
-      technologies: ['React.js', 'Tailwind CSS', 'Local Storage'],
-      githubUrl: '#',
-      liveUrl: '#'
-    }
+    // {
+    //   id: 1,
+    //   title: 'NuCamp - Camp Management Portal',
+    //   description: 'Comprehensive camp management portal handling medical, food, accommodation, and transport services for employees with secure data management.',
+    //   technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'React Router'],
+    //   githubUrl: '#',
+    //   liveUrl: '#'
+    // },
+    // {
+    //   id: 2,
+    //   title: 'NuService - Fire Safety System',
+    //   description: 'Fire safety inspection and maintenance system for tracking extinguisher status and client compliance reports, reducing manual tracking time by 50%.',
+    //   technologies: ['React.js', 'Tailwind CSS', 'React Router'],
+    //   githubUrl: '#',
+    //   liveUrl: '#'
+    // },
+    
   ];
 
   return (
@@ -44,7 +55,7 @@ const Projects = () => {
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech) => (
-                    <span key={tech} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
+                    <span key={tech} className="px-3 py-1 bg-blue-500 text-white rounded-full text-sm">
                       {tech}
                     </span>
                   ))}
@@ -53,12 +64,12 @@ const Projects = () => {
                 <div className="flex gap-4">
                   {project.githubUrl && (
                     <a href={project.githubUrl} className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
-                      <Github /> Code
+                      <Github className=" w-5 h-5" /> Code
                     </a>
                   )}
                   {project.liveUrl && (
                     <a href={project.liveUrl} className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors">
-                      <ExternalLink /> Live Demo
+                      <ExternalLink className=" w-5 h-5"/> Live Demo
                     </a>
                   )}
                 </div>
