@@ -8,7 +8,7 @@ const Projects = () => {
     {
       id: 1,
       title: 'E-Cartify',
-      description: '• Built a modern e-commerce SPA featuring dynamic product catalogs, cart management, and a seamless checkout flow. • Eliminated data loss on browser refresh by implementing localStorage for persistent cart data. ',
+      description: 'Built a modern e-commerce SPA featuring dynamic product catalogs, cart management, and a seamless checkout flow. Eliminated data loss on browser refresh by implementing localStorage for persistent cart data. ',
       technologies: ['React.js', 'Tailwind CSS', 'React Router', 'Local Storage'],
       githubUrl: 'https://github.com/sherinms10/e-cartify',
       liveUrl: 'https://e-cartify.vercel.app/'
@@ -17,19 +17,19 @@ const Projects = () => {
      {
       id: 2,
       title: 'SkyCast',
-      description: '• Created a fully responsive weather application with city search, GPS detection, and display of realtime weather metrics. • Implemented local timezone detection to show accurate local time and date for any searched location',
+      description: 'Created a fully responsive weather application with city search, GPS detection, and display of realtime weather metrics. Implemented local timezone detection to show accurate local time and date for any searched location',
       technologies: ['React.js', 'Tailwind CSS', 'OpenWeatherMap API '],
       githubUrl: 'https://github.com/sherinms10/SkyCast',
       liveUrl: 'https://skycast-mu.vercel.app/'
     },
-    // {
-    //   id: 1,
-    //   title: 'NuCamp - Camp Management Portal',
-    //   description: 'Comprehensive camp management portal handling medical, food, accommodation, and transport services for employees with secure data management.',
-    //   technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'React Router'],
-    //   githubUrl: '#',
-    //   liveUrl: '#'
-    // },
+    {
+      id: 3,
+      title: 'Flip Card',
+      description: 'This project is an interactive Flip Card Image Gallery built using HTML and CSS. Each card flips smoothly on hover to reveal an image on the back, making it a creative and engaging way to showcase photos, products, or portfolio items.',
+      technologies: ['HTML' , 'CSS'],
+      githubUrl: 'https://github.com/sherinms10/Flip-Card',
+      liveUrl: 'https://cardsflip.vercel.app/'
+    },
     // {
     //   id: 2,
     //   title: 'NuService - Fire Safety System',

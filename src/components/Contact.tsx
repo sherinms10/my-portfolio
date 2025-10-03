@@ -20,7 +20,7 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-center text-dark mb-12">Get In Touch</h2>
         
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-          <div>
+          <div className='  rounded-lg p-4 shadow-lg'>
             <h3 className="text-2xl font-semibold mb-6 text-secondary">Let's Talk</h3>
             <p className="text-gray-600 mb-8">
               I'm always open to discussing new opportunities and interesting projects. 
@@ -60,7 +60,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className=" rounded-lg p-4 shadow-lg" >
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                 Your Name
@@ -105,7 +105,7 @@ const Contact = () => {
             
             <button
               type="submit"
-              className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-secondary transition-colors"
+              className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold  transition-colors"
             >
               Send Message
             </button>
