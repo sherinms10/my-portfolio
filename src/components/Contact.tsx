@@ -19,9 +19,9 @@ const Contact = () => {
     message: "",
   });
 
-  const EMAILJS_SERVICE_ID = "service_da34pxb";
-  const EMAILJS_TEMPLATE_ID = "template_m0astzs";
-  const EMAILJS_PUBLIC_KEY = "FoROyTbeDxa5ITTX1";
+  const EMAILJS_SERVICE_ID = "service_14ms";
+  const EMAILJS_TEMPLATE_ID = "template_s3patop";
+  const EMAILJS_PUBLIC_KEY = "YB7AmDn0dOD64NXo8";
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -106,8 +106,8 @@ const Contact = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Get In <span className="text-blue-600">Touch</span>
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            I’m always open to discussing new opportunities and interesting
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto transition-all  duration-300 transform hover:scale-105">
+            I'm always open to discussing new opportunities and interesting
             projects. Feel free to reach out if you’d like to work together!
           </p>
         </div>
@@ -267,19 +267,21 @@ const Contact = () => {
 
                   {/* Submit Button */}
                   <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-full py-3 px-6 hover:shadow-xl hover:scale-105 transition-all duration-300"
-                  >
-                    <span className="flex items-center justify-center gap-2">
-                      {isSubmitting ? (
-                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                      ) : (
-                        <Send className="h-5 w-5" />
-                      )}
-                      {isSubmitting ? "Sending..." : "Send Message"}
-                    </span>
-                  </button>
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full cursor-pointer bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded-full py-3 px-6 hover:shadow-xl transform hover:scale-105 transition-all duration-300 group relative overflow-hidden"
+        >
+          <span className="relative z-10 flex items-center justify-center gap-2">
+            {isSubmitting ? (
+              <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+            ) : (
+              <Send className="h-5 w-5" />
+            )}
+            {isSubmitting ? "Sending..." : "Send Message"}
+          </span>
+          {/* Button Glow Effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </button>
                 </form>
               )}
             </div>

@@ -36,7 +36,7 @@ const education: Education[] = [
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {education.map((edu, index) => (
-              <Card key={index} className="bg-card border-border hover:shadow-card transition-all duration-300 group">
+              <Card key={index} className="bg-card border-border  transition-all duration-300 group">
                 <CardHeader>
                   <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors duration-300">
                     {edu.degree}

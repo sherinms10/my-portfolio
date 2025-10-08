@@ -25,7 +25,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-dark hover:text-teal-600 transition-colors font-medium"
+                className="text-dark hover:text-blue-600 transition-colors font-medium"
               >
                 {item.label}
               </a>
@@ -33,7 +33,7 @@ const Header = () => {
           </div>
 
           <button
-  className="hidden md:flex text-dark hover:text-teal-600 transition-colors font-medium cursor-pointer"
+  className="hidden md:flex text-dark hover:text-blue-600 transition-colors font-medium cursor-pointer"
   onClick={() => window.open('/SHERIN_M.pdf', '_blank')} 
 >
   View CV
@@ -42,7 +42,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className=' flex gap-5 md:hidden'>
                     <button
-  className="md:hidden text-dark hover:text-teal-600 transition-colors font-medium cursor-pointer"
+  className="md:hidden text-dark hover:text-blue-600 transition-colors font-medium cursor-pointer"
   onClick={() => window.open('/SHERIN_M.pdf', '_blank')} 
 >
   View CV

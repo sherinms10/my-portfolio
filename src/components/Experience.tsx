@@ -59,7 +59,7 @@ const Experiences = () => {
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {experience.map((exp, index) => (
-            <Card key={index} className="bg-card border-border hover:shadow-lg transition-all duration-300 group hover:border-primary/20">
+            <Card key={index} className="bg-card border-border  transition-all duration-300 group hover:border-primary/20">
               <CardHeader>
                 <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors duration-300">
                   {exp.role}
