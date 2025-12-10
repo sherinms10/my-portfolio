@@ -5,7 +5,7 @@ import JS from '../assets/img/JS.png'
 import React from '../assets/img/React.png'
 import Vite from '../assets/img/Vite.png'
 import TypeScript from '../assets/img/Typescript.png'
-import Next from '../assets/img/Next.png'
+// import Next from '../assets/img/Next.png'
 import Tailwind from '../assets/img/Tailwind.png'
 import Git from '../assets/img/Git.png'
 import Postman from '../assets/img/Postman.png'
@@ -19,7 +19,7 @@ const Skills = () => {
     { name: 'React.js', img: React },
     { name: 'Vite', img: Vite },
     { name: 'TypeScript', img: TypeScript },
-    { name: 'Next.js', img: Next },
+    // { name: 'Next.js', img: Next },
     { name: 'Tailwind CSS', img: Tailwind },
     { name: 'Git', img: Git },
     { name: 'Postman', img: Postman },
