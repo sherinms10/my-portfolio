@@ -2,6 +2,7 @@ import { Download, Github, Linkedin, Mail } from "lucide-react";
 import '../App.css'
 import { useEffect, useState } from "react";
 import useTypewriter from "../Hooks/useTypewriter";
+import MS from '../assets/img/sherin.jpg'
 
 
 
@@ -105,13 +106,13 @@ const Hero = () => {
               showSubtitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
 
-            <div className="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl">
+            {/* <div className="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl">
               <div className="w-56 h-56 md:w-72 md:h-72 bg-white rounded-full flex items-center justify-center shadow-inner">
                 <span className="text-4xl md:text-6xl font-bold text-gray-800">SM</span>
               </div>
-            </div>
+            </div> */}
             
-            {/* <div className="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl">
+            <div className="w-64 h-64 md:w-80 md:h-80 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl">
               <div className="w-72 h-72 bg-white rounded-full overflow-hidden flex items-center justify-center">
   <img 
     src={MS} 
@@ -120,7 +121,7 @@ const Hero = () => {
   />
 </div>
 
-            </div> */}
+            </div>
             
             {/* Optional: Floating elements for visual interest */}
             <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full opacity-20 animate-pulse"></div>
