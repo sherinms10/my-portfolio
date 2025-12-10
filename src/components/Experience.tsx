@@ -45,8 +45,8 @@ const Experiences = () => {
     {
       role: "Frontend Developer",
       company: "Numota Technology, Kanyakumari",
-      period: "Sept 2023 to Nov 2025",
-      isCurrent: true
+      period: "Oct 2023 to Nov 2025",
+      // isCurrent: true
     },
   ]
 
