@@ -12,7 +12,7 @@ const education: Education[] = [
       degree: "BTech in Information Technology",
       institution: "Jeppiaar Institute of Technology, Chennai",
       period: "2019 to 2023",
-      score: "8.15 CGPA"
+      score: "First class with 8.15 CGPA"
     },
     {
       degree: "HSC in Computer Science",
